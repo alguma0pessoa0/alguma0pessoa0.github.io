@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conteúdo Movido</title>
+    <style>
+      :root {
+        color-scheme: light;
+        font-family: "Inter", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #eef2ff;
+        color: #0f172a;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        background: radial-gradient(circle at top left, rgba(99, 102, 241, 0.18), transparent 28%),
+          radial-gradient(circle at bottom right, rgba(59, 130, 246, 0.16), transparent 24%),
+          #eef2ff;
+      }
+      .container {
+        width: min(100%, 620px);
+        padding: 2.5rem 2rem;
+        border-radius: 24px;
+        background: rgba(255, 255, 255, 0.96);
+        border: 1px solid rgba(148, 163, 184, 0.18);
+        box-shadow: 0 24px 80px rgba(15, 23, 42, 0.12);
+        text-align: center;
+      }
+      .badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.75rem 1rem;
+        border-radius: 999px;
+        background: rgba(59, 130, 246, 0.12);
+        color: #1d4ed8;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.12em;
+        margin-bottom: 1.5rem;
+      }
+      h1 {
+        margin: 0;
+        font-size: clamp(2rem, 4vw, 2.75rem);
+        letter-spacing: -0.05em;
+      }
+      p {
+        margin: 1.25rem 0 0;
+        line-height: 1.85;
+        color: #334155;
+        font-size: 1rem;
+      }
+      .links {
+        display: grid;
+        gap: 0.85rem;
+        margin-top: 2rem;
+      }
+      .button {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.95rem 1.3rem;
+        border-radius: 999px;
+        border: 1px solid transparent;
+        background: linear-gradient(135deg, #4f46e5, #2563eb);
+        color: white;
+        text-decoration: none;
+        font-weight: 700;
+        transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+      }
+      .button:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 18px 32px rgba(59, 130, 246, 0.22);
+      }
+      .button.outline {
+        background: transparent;
+        color: #1d4ed8;
+        border-color: rgba(59, 130, 246, 0.25);
+      }
+      .button.outline:hover {
+        background: rgba(59, 130, 246, 0.08);
+        box-shadow: none;
+      }
+      .note {
+        margin-top: 1.75rem;
+        color: #475569;
+        font-size: 0.96rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="badge">Atenção</div>
+      <h1>O conteúdo foi movido</h1>
+      <p>O conteúdo original desta página agora está disponível em outro local. Use os links abaixo para acessar a página correta ou ver todos os subdomínios.</p>
+      <div class="links">
+        <a class="button" href="https://kanior.netlify.app/block" target="_blank" rel="noopener noreferrer">Ir para o conteúdo original</a>
+        <a class="button outline" href="https://kanior.netlify.app/subs" target="_blank" rel="noopener noreferrer">Ver subdomínios disponíveis</a>
+      </div>
+      <p class="note">Se preferir, copie os endereços no navegador e cole-os diretamente.</p>
+    </div>
+  </body>
+</html>
